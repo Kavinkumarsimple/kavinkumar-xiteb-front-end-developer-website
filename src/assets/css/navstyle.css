@@ -1,0 +1,243 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Playfair+Display:wght@400;500;700&display=swap');
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+.link_holder::after {
+  content: "|";
+  font-size: 14px;
+}
+
+.no-text-decoration {
+  text-decoration: none !important;
+}
+
+.headerLink {
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px !important;
+  color: #333333;
+  font-weight: 600;
+  margin-right: 4px;
+  padding-right: 10px;
+}
+
+.headerLink:hover {
+  color: #191919;
+}
+
+.dAppLogo {
+  height: 50px;
+}
+
+.headerContainer {
+  height: 60px;
+  background-color: #f4f5f6;
+}
+
+.navHeader {
+  margin-left: auto;
+  margin-right: auto;
+  height: 60px;
+  max-width: 1150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  display: none;
+}
+
+.navbar {
+  background-color: #333333;
+}
+
+.dropdown-menu.show {
+
+
+}
+
+.menuSubHeading {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+
+.subLinks {
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px !important;
+  font-weight: lighter;
+  line-height: 1.9;
+}
+
+.subLinks:hover {
+  color: #876A20;
+}
+
+.findBTN {
+  margin-left: 80px;
+  font-family: 'Montserrat', sans-serif;
+  border: 1px white solid;
+  color: white !important;
+  padding: 5px 10px 5px 10px;
+  font-size: 14px;
+}
+
+.findBTN:hover {
+  color: #333333 !important;
+  background-color: white;
+}
+
+.nav-link {
+  font-size: 14px !important;
+  color: white !important;
+  padding: 10px 20px 10px 20px !important;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.nav-item:hover .nav-link {
+  background-color: white;
+  color: black !important;
+}
+
+.nav-link i {
+  font-size: .9em;
+  font-weight: lighter;
+}
+
+.nav-item:hover .nav-link i {
+  transform: rotate(-180deg);
+}
+
+
+
+.nav-item.dropdown.dropdown-mega {
+  position: static;
+}
+
+.nav-item.dropdown.dropdown-mega .dropdown-menu {
+  width: 100%;
+  top: 100%;
+  border-radius: 0px !important;
+  border: 1px white solid;
+}
+
+.navbar-toggler {
+  border: none;
+  padding: 0;
+  outline: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler .hamburger-toggle {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  z-index: 11;
+  float: right;
+}
+
+.navbar-toggler .hamburger-toggle .hamburger {
+  position: absolute;
+  transform: translate(-50%, -50%) rotate(0deg);
+  left: 50%;
+  top: 50%;
+  width: 50%;
+  height: 50%;
+  pointer-events: none;
+}
+
+.navbar-toggler .hamburger-toggle .hamburger span {
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  background: #333;
+  border-radius: 2px;
+  z-index: 1;
+  transition: transform 0.2s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.2s cubic-bezier(0.77, 0.2, 0.05, 1), all 0.2s ease-in-out;
+  left: 0px;
+}
+
+.navbar-toggler .hamburger-toggle .hamburger span:first-child {
+  top: 10%;
+  transform-origin: 50% 50%;
+  transform: translate(0% -50%) !important;
+}
+
+.navbar-toggler .hamburger-toggle .hamburger span:nth-child(2) {
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.navbar-toggler .hamburger-toggle .hamburger span:last-child {
+  left: 0px;
+  top: auto;
+  bottom: 10%;
+  transform-origin: 50% 50%;
+}
+
+.navbar-toggler .hamburger-toggle .hamburger.active span {
+  position: absolute;
+  margin: 0;
+}
+
+.navbar-toggler .hamburger-toggle .hamburger.active span:first-child {
+  top: 45%;
+  transform: rotate(45deg);
+}
+
+.navbar-toggler .hamburger-toggle .hamburger.active span:nth-child(2) {
+  left: 50%;
+  width: 0px;
+}
+
+.navbar-toggler .hamburger-toggle .hamburger.active span:last-child {
+  top: 45%;
+  transform: rotate(-45deg);
+}
+
+.icons {
+  display: inline-flex;
+  margin-left: auto;
+}
+
+.icons a {
+  transition: all 0.2s ease-in-out;
+  padding: 0.2rem 0.4rem;
+  color: #ccc !important;
+  text-decoration: none;
+}
+
+.icons a:hover {
+  color: white;
+  text-shadow: 0 0 30px white;
+}
+
+.list-group-item {
+  border: none !important;
+  padding: 0 !important;
+}
+
+
+@media only screen and (max-width: 992px) {
+  .navbar-brand {
+    display: block;
+  }
+}
